@@ -1,0 +1,16 @@
+{
+  "docsSidebar": [
+    "intro",
+    {
+      "type": "category",
+      "label": "Tutorial",
+      "items": [
+        "tutorial-basics/create-a-document",
+        "tutorial-basics/congratulations"
+      ]
+    }
+  ],
+  "apiSidebar": [
+    "api/hola"
+  ]
+}
