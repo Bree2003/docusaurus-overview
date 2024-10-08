@@ -32,7 +32,7 @@ const config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'es',
-    locales: ['es', 'en', 'pt-BR', 'fr'],
+    locales: ['es'],
   },
 
   themes: ['@docusaurus/theme-mermaid'],
@@ -56,7 +56,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/Bree2003/docusaurus-overview/tree/main/',
         },
         // blog: {
         //   showReadingTime: true,
@@ -83,42 +83,42 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      algolia: {
+      // algolia: {
         // The application ID provided by Algolia
-        appId: "WRDX8J1YDZ",
+      //   appId: "WRDX8J1YDZ",
 
         // Public API key: it is safe to commit it
-        apiKey: "544bd67c784f49cd441c3108434030ca",
+      //   apiKey: "544bd67c784f49cd441c3108434030ca",
 
-        indexName: "-demo",
+      //   indexName: "-demo",
 
         // Optional: see doc section below
-        contextualSearch: false,
+      //   contextualSearch: false,
 
         // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
         // externalUrlRegex: "external\\.com|domain\\.com",
 
         // Optional: Replace parts of the item URLs from Algolia. Useful when using the same search index for multiple deployments using a different baseUrl. You can use regexp or string in the `from` param. For example: localhost:3000 vs myCompany.com/docs
-        replaceSearchResultPathname: {
-          from: "/docs/", // or as RegExp: /\/docs\//
-          to: "/",
-        },
+      //   replaceSearchResultPathname: {
+      //     from: "/docs/", // or as RegExp: /\/docs\//
+      //     to: "/",
+      //   },
 
         // Optional: Algolia search parameters
-        searchParameters: {},
+      //   searchParameters: {},
 
         // Optional: path for search page that enabled by default (`false` to disable it)
-        searchPagePath: "search",
+      //   searchPagePath: "search",
 
         // Optional: whether the insights feature is enabled or not on Docsearch (`false` by default)
-        insights: false,
+      //   insights: false,
 
         //... other Algolia params
-      },
+      // },
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        hideOnScroll: true,
+        // hideOnScroll: true,
         title: 'Fidelidad',
         logo: {
           alt: 'Fidelidad - Puntos Logo',
@@ -127,22 +127,44 @@ const config = {
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'docsSidebar',
-            position: 'left',
-            label: 'Docs',
-          },
-          {
-            type: 'docSidebar',
-            position: 'left',
-            sidebarId: 'apiSidebar',
+            sidebarId: 'api',
             label: 'API',
+            position: 'left'
           },
-          {
-            type: 'docSidebar',
-            position: 'left',
-            sidebarId: 'toraSidebar',
-            label: 'Tora',
-          },
+          // {
+          //   type: 'dropdown',
+          //   label: 'Recursos',
+          //   position: 'left',
+          //   items: [
+          //     {
+          //       label: 'GitHub',
+          //       href: 'https://github.com',
+          //     },
+          //     {
+          //       label: 'Documentación',
+          //       to: '/docs/intro',
+          //     },
+          //   ],
+          // },
+          
+          // {
+          //   type: 'docSidebar',
+          //   sidebarId: 'docsSidebar',
+          //   position: 'left',
+          //   label: 'Docs',
+          // },
+          // {
+          //   type: 'docSidebar',
+          //   position: 'left',
+          //   sidebarId: 'apiSidebar',
+          //   label: 'API',
+          // },
+          // {
+          //   type: 'docSidebar',
+          //   position: 'left',
+          //   sidebarId: 'toraSidebar',
+          //   label: 'Tora',
+          // },
           {
             type: 'docsVersionDropdown',
             position: 'right'
@@ -162,60 +184,60 @@ const config = {
           //   ],
           // },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/Bree2003/docusaurus-overview',
             position: 'right',
             className: 'header-github-link',
             'aria-label': 'GitHub repository',
           },
-          {
-            type: 'search',
-            position: 'right',
-          },
+          // {
+          //   type: 'search',
+          //   position: 'right',
+          // },
         ],
       },
       footer: {
-        style: 'dark',
-        links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
-            ],
-          },
-        ],
+        style: 'light',
+        // links: [
+          // {
+          //   title: 'Docs',
+          //   items: [
+          //     {
+          //       label: 'Tutorial',
+          //       to: '/docs/intro',
+          //     },
+          //   ],
+          // },
+          // {
+          //   title: 'Community',
+          //   items: [
+          //     {
+          //       label: 'Stack Overflow',
+          //       href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+          //     },
+          //     {
+          //       label: 'Discord',
+          //       href: 'https://discordapp.com/invite/docusaurus',
+          //     },
+          //     {
+          //       label: 'Twitter',
+          //       href: 'https://twitter.com/docusaurus',
+          //     },
+          //   ],
+          // },
+        //   {
+        //     title: 'More',
+        //     items: [
+        //       // {
+        //       //   label: 'Blog',
+        //       //   to: '/blog',
+        //       // },
+        //       {
+        //         label: 'GitHub',
+        //         href: 'https://github.com/Bree2003/docusaurus-overview/',
+        //       },
+        //     ],
+        //   },
+        // ],
         // copyright: `Copyright © ${new Date().getFullYear()} Cencosud S.A. Hecho con ❤ por el team Fidelidad`,
         copyright: `Hecho con ❤ por el team <strong>Fidelidad</strong>`,
       },
